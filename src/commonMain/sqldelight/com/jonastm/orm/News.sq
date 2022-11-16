@@ -1,0 +1,15 @@
+insert:
+INSERT INTO news(title, text)
+VALUES (?, ?);
+
+rowid:
+SELECT last_insert_rowid();
+
+selectById:
+SELECT id, title, text
+FROM news
+WHERE id = :id;
+
+findAll:
+SELECT id, title, text
+FROM news;
