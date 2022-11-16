@@ -7,7 +7,13 @@ The core server logic including routes and plugins lays in `commonMain` module.
 The platform specific _Ktor Engine_, _Configuration_ and _SQLDelight Drivers_ are implemented 
 in the respective target modules `commonNative` and `commonMain`.
 
+#### Features
+- Ktor Plugins
+- Different engines per target (Netty -> JVM, CIO -> Native)
+- SQLDelight SQLite Persistence 
+
 ### Run/Debug
+- Config path to SQLite database in `com.jonastm.EnvironmentImpl.kt` per target module
 - Kotlin/JVM `gradle :run` 
   - (not working for some unknown reason -> start via IntelliJ main func)
 - Kotlin/Native
