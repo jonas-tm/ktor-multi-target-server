@@ -25,10 +25,8 @@ repositories {
 
 sqldelight {
     database("DB") {
-        //dialect("postgresql")
         packageName = "com.jonastm.orm.sqldelight"
         deriveSchemaFromMigrations = true
-//        dialect("app.cash.sqldelight:dialect-postgresql:$sqldelight_version")
     }
 //    linkSqlite = false
 }

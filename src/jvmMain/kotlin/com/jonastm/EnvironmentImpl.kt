@@ -6,6 +6,6 @@ actual fun readEnvironmentVariables(): Env = Env(
         port = HTTP_PORT
     ),
     sqlite = Env.Sqlite(
-        filePath = "test.sqlite"
+        filePath = "jdbc:sqlite:/Users/jonastm/IdeaProjects/ktor-multi-target-server/db.sqlite"
     )
 )

@@ -9,6 +9,6 @@ actual fun readEnvironmentVariables(): Env = Env(
         port = getenv("SERVER_PORT")?.toKString()?.toIntOrNull() ?: HTTP_PORT
     ),
     sqlite = Env.Sqlite(
-        filePath = "test.sqlite"
+        filePath = "db.sqlite"
      )
 )
